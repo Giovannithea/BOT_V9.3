@@ -179,7 +179,7 @@ async function processRaydiumLpTransaction(connection, signature) {
                     // ➕ ADD: tokenId field (SniperManager expects this)
                     tokenId: new PublicKey(indexedAccounts.baseMint).toString(),
                     baseDecimals: 9,
-                    quoteDecimals: 9,
+                    quoteDecimals: 6,
                     version: 'V2',
                     marketVersion: 'V2',
                     serumProgramId: indexedAccounts.marketProgramId,
